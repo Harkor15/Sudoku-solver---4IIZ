@@ -16,5 +16,35 @@ namespace Sudoku_solver
         {
             InitializeComponent();
         }
+
+        void limitLengthToOne(TextBox tb)
+        {
+            String value = tb.Text;
+            if (value.Length > 1)
+            {
+                tb.Text = value.Substring(0, 1);
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            test_label.Text = "Button clicked";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox1);
+        }
+
+        private void test_label_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox2);
+        }
     }
 }
