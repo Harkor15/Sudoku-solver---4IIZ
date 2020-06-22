@@ -69,8 +69,8 @@
             this.textBox4x5 = new System.Windows.Forms.TextBox();
             this.textBox3x5 = new System.Windows.Forms.TextBox();
             this.textBox5x4 = new System.Windows.Forms.TextBox();
-            this.textBox4z4 = new System.Windows.Forms.TextBox();
-            this.textBox3z4 = new System.Windows.Forms.TextBox();
+            this.textBox4x4 = new System.Windows.Forms.TextBox();
+            this.textBox3x4 = new System.Windows.Forms.TextBox();
             this.textBox5x3 = new System.Windows.Forms.TextBox();
             this.textBox4x3 = new System.Windows.Forms.TextBox();
             this.textBox3x3 = new System.Windows.Forms.TextBox();
@@ -457,21 +457,21 @@
             this.textBox5x4.TabIndex = 42;
             this.textBox5x4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4z4
+            // textBox4x4
             // 
-            this.textBox4z4.Location = new System.Drawing.Point(135, 133);
-            this.textBox4z4.Name = "textBox4z4";
-            this.textBox4z4.Size = new System.Drawing.Size(20, 20);
-            this.textBox4z4.TabIndex = 41;
-            this.textBox4z4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox4x4.Location = new System.Drawing.Point(135, 133);
+            this.textBox4x4.Name = "textBox4x4";
+            this.textBox4x4.Size = new System.Drawing.Size(20, 20);
+            this.textBox4x4.TabIndex = 41;
+            this.textBox4x4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3z4
+            // textBox3x4
             // 
-            this.textBox3z4.Location = new System.Drawing.Point(109, 133);
-            this.textBox3z4.Name = "textBox3z4";
-            this.textBox3z4.Size = new System.Drawing.Size(20, 20);
-            this.textBox3z4.TabIndex = 40;
-            this.textBox3z4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox3x4.Location = new System.Drawing.Point(109, 133);
+            this.textBox3x4.Name = "textBox3x4";
+            this.textBox3x4.Size = new System.Drawing.Size(20, 20);
+            this.textBox3x4.TabIndex = 40;
+            this.textBox3x4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5x3
             // 
@@ -841,8 +841,8 @@
             this.Controls.Add(this.textBox4x5);
             this.Controls.Add(this.textBox3x5);
             this.Controls.Add(this.textBox5x4);
-            this.Controls.Add(this.textBox4z4);
-            this.Controls.Add(this.textBox3z4);
+            this.Controls.Add(this.textBox4x4);
+            this.Controls.Add(this.textBox3x4);
             this.Controls.Add(this.textBox5x3);
             this.Controls.Add(this.textBox4x3);
             this.Controls.Add(this.textBox3x3);
@@ -933,8 +933,8 @@
         private System.Windows.Forms.TextBox textBox4x5;
         private System.Windows.Forms.TextBox textBox3x5;
         private System.Windows.Forms.TextBox textBox5x4;
-        private System.Windows.Forms.TextBox textBox4z4;
-        private System.Windows.Forms.TextBox textBox3z4;
+        private System.Windows.Forms.TextBox textBox4x4;
+        private System.Windows.Forms.TextBox textBox3x4;
         private System.Windows.Forms.TextBox textBox5x3;
         private System.Windows.Forms.TextBox textBox4x3;
         private System.Windows.Forms.TextBox textBox3x3;
