@@ -136,14 +136,6 @@ namespace Sudoku_solver
             }
         }
 
-        
-
-        /*
-        void initFields()
-        {
-            fields.Add(textBox0x0);
-        }
-        */
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -156,11 +148,6 @@ namespace Sudoku_solver
                 test_label.Text = "Data is not valid!";
 
             }
-        }
-
-        private void test_label_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

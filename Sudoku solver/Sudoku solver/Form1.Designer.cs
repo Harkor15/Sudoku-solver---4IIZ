@@ -793,7 +793,6 @@
             this.test_label.Size = new System.Drawing.Size(28, 13);
             this.test_label.TabIndex = 82;
             this.test_label.Text = "Test";
-            this.test_label.Click += new System.EventHandler(this.test_label_Click);
             // 
             // Form1
             // 

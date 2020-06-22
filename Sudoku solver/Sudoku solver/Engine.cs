@@ -10,16 +10,12 @@ namespace Sudoku_solver
     {
         public static DataSet ComputeResult(DataSet dataSet)
         {
-
-
             return dataSet;
         }
 
         public static bool IsDataValid(DataSet dataSet)
         {
             int tmp = 0;
-            int? a = dataSet.sudokuData[0, 0];
-
 
             for (int i = 1; i < 10; i++)
             {
