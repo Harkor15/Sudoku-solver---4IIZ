@@ -135,7 +135,91 @@ namespace Sudoku_solver
                 }
             }
         }
-
+        
+        void SetFields(DataSet dataSet)
+        {
+            if (dataSet.sudokuData[0, 0] != null) { textBox0x0.Text = "" + dataSet.sudokuData[0, 0]; }
+            if (dataSet.sudokuData[0, 1] != null) { textBox0x1.Text = "" + dataSet.sudokuData[0, 1]; }
+            if (dataSet.sudokuData[0, 2] != null) { textBox0x2.Text = "" + dataSet.sudokuData[0, 2]; }
+            if (dataSet.sudokuData[0, 3] != null) { textBox0x3.Text = "" + dataSet.sudokuData[0, 3]; }
+            if (dataSet.sudokuData[0, 4] != null) { textBox0x4.Text = "" + dataSet.sudokuData[0, 4]; }
+            if (dataSet.sudokuData[0, 5] != null) { textBox0x5.Text = "" + dataSet.sudokuData[0, 5]; }
+            if (dataSet.sudokuData[0, 6] != null) { textBox0x6.Text = "" + dataSet.sudokuData[0, 6]; }
+            if (dataSet.sudokuData[0, 7] != null) { textBox0x7.Text = "" + dataSet.sudokuData[0, 7]; }
+            if (dataSet.sudokuData[0, 8] != null) { textBox0x8.Text = "" + dataSet.sudokuData[0, 8]; }
+            if (dataSet.sudokuData[1, 0] != null) { textBox1x0.Text = "" + dataSet.sudokuData[1, 0]; }
+            if (dataSet.sudokuData[1, 1] != null) { textBox1x1.Text = "" + dataSet.sudokuData[1, 1]; }
+            if (dataSet.sudokuData[1, 2] != null) { textBox1x2.Text = "" + dataSet.sudokuData[1, 2]; }
+            if (dataSet.sudokuData[1, 3] != null) { textBox1x3.Text = "" + dataSet.sudokuData[1, 3]; }
+            if (dataSet.sudokuData[1, 4] != null) { textBox1x4.Text = "" + dataSet.sudokuData[1, 4]; }
+            if (dataSet.sudokuData[1, 5] != null) { textBox1x5.Text = "" + dataSet.sudokuData[1, 5]; }
+            if (dataSet.sudokuData[1, 6] != null) { textBox1x6.Text = "" + dataSet.sudokuData[1, 6]; }
+            if (dataSet.sudokuData[1, 7] != null) { textBox1x7.Text = "" + dataSet.sudokuData[1, 7]; }
+            if (dataSet.sudokuData[1, 8] != null) { textBox1x8.Text = "" + dataSet.sudokuData[1, 8]; }
+            if (dataSet.sudokuData[2, 0] != null) { textBox2x0.Text = "" + dataSet.sudokuData[2, 0]; }
+            if (dataSet.sudokuData[2, 1] != null) { textBox2x1.Text = "" + dataSet.sudokuData[2, 1]; }
+            if (dataSet.sudokuData[2, 2] != null) { textBox2x2.Text = "" + dataSet.sudokuData[2, 2]; }
+            if (dataSet.sudokuData[2, 3] != null) { textBox2x3.Text = "" + dataSet.sudokuData[2, 3]; }
+            if (dataSet.sudokuData[2, 4] != null) { textBox2x4.Text = "" + dataSet.sudokuData[2, 4]; }
+            if (dataSet.sudokuData[2, 5] != null) { textBox2x5.Text = "" + dataSet.sudokuData[2, 5]; }
+            if (dataSet.sudokuData[2, 6] != null) { textBox2x6.Text = "" + dataSet.sudokuData[2, 6]; }
+            if (dataSet.sudokuData[2, 7] != null) { textBox2x7.Text = "" + dataSet.sudokuData[2, 7]; }
+            if (dataSet.sudokuData[2, 8] != null) { textBox2x8.Text = "" + dataSet.sudokuData[2, 8]; }
+            if (dataSet.sudokuData[3, 0] != null) { textBox3x0.Text = "" + dataSet.sudokuData[3, 0]; }
+            if (dataSet.sudokuData[3, 1] != null) { textBox3x1.Text = "" + dataSet.sudokuData[3, 1]; }
+            if (dataSet.sudokuData[3, 2] != null) { textBox3x2.Text = "" + dataSet.sudokuData[3, 2]; }
+            if (dataSet.sudokuData[3, 3] != null) { textBox3x3.Text = "" + dataSet.sudokuData[3, 3]; }
+            if (dataSet.sudokuData[3, 4] != null) { textBox3x4.Text = "" + dataSet.sudokuData[3, 4]; }
+            if (dataSet.sudokuData[3, 5] != null) { textBox3x5.Text = "" + dataSet.sudokuData[3, 5]; }
+            if (dataSet.sudokuData[3, 6] != null) { textBox3x6.Text = "" + dataSet.sudokuData[3, 6]; }
+            if (dataSet.sudokuData[3, 7] != null) { textBox3x7.Text = "" + dataSet.sudokuData[3, 7]; }
+            if (dataSet.sudokuData[3, 8] != null) { textBox3x8.Text = "" + dataSet.sudokuData[3, 8]; }
+            if (dataSet.sudokuData[4, 0] != null) { textBox4x0.Text = "" + dataSet.sudokuData[4, 0]; }
+            if (dataSet.sudokuData[4, 1] != null) { textBox4x1.Text = "" + dataSet.sudokuData[4, 1]; }
+            if (dataSet.sudokuData[4, 2] != null) { textBox4x2.Text = "" + dataSet.sudokuData[4, 2]; }
+            if (dataSet.sudokuData[4, 3] != null) { textBox4x3.Text = "" + dataSet.sudokuData[4, 3]; }
+            if (dataSet.sudokuData[4, 4] != null) { textBox4x4.Text = "" + dataSet.sudokuData[4, 4]; }
+            if (dataSet.sudokuData[4, 5] != null) { textBox4x5.Text = "" + dataSet.sudokuData[4, 5]; }
+            if (dataSet.sudokuData[4, 6] != null) { textBox4x6.Text = "" + dataSet.sudokuData[4, 6]; }
+            if (dataSet.sudokuData[4, 7] != null) { textBox4x7.Text = "" + dataSet.sudokuData[4, 7]; }
+            if (dataSet.sudokuData[4, 8] != null) { textBox4x8.Text = "" + dataSet.sudokuData[4, 8]; }
+            if (dataSet.sudokuData[5, 0] != null) { textBox5x0.Text = "" + dataSet.sudokuData[5, 0]; }
+            if (dataSet.sudokuData[5, 1] != null) { textBox5x1.Text = "" + dataSet.sudokuData[5, 1]; }
+            if (dataSet.sudokuData[5, 2] != null) { textBox5x2.Text = "" + dataSet.sudokuData[5, 2]; }
+            if (dataSet.sudokuData[5, 3] != null) { textBox5x3.Text = "" + dataSet.sudokuData[5, 3]; }
+            if (dataSet.sudokuData[5, 4] != null) { textBox5x4.Text = "" + dataSet.sudokuData[5, 4]; }
+            if (dataSet.sudokuData[5, 5] != null) { textBox5x5.Text = "" + dataSet.sudokuData[5, 5]; }
+            if (dataSet.sudokuData[5, 6] != null) { textBox5x6.Text = "" + dataSet.sudokuData[5, 6]; }
+            if (dataSet.sudokuData[5, 7] != null) { textBox5x7.Text = "" + dataSet.sudokuData[5, 7]; }
+            if (dataSet.sudokuData[5, 8] != null) { textBox5x8.Text = "" + dataSet.sudokuData[5, 8]; }
+            if (dataSet.sudokuData[6, 0] != null) { textBox6x0.Text = "" + dataSet.sudokuData[6, 0]; }
+            if (dataSet.sudokuData[6, 1] != null) { textBox6x1.Text = "" + dataSet.sudokuData[6, 1]; }
+            if (dataSet.sudokuData[6, 2] != null) { textBox6x2.Text = "" + dataSet.sudokuData[6, 2]; }
+            if (dataSet.sudokuData[6, 3] != null) { textBox6x3.Text = "" + dataSet.sudokuData[6, 3]; }
+            if (dataSet.sudokuData[6, 4] != null) { textBox6x4.Text = "" + dataSet.sudokuData[6, 4]; }
+            if (dataSet.sudokuData[6, 5] != null) { textBox6x5.Text = "" + dataSet.sudokuData[6, 5]; }
+            if (dataSet.sudokuData[6, 6] != null) { textBox6x6.Text = "" + dataSet.sudokuData[6, 6]; }
+            if (dataSet.sudokuData[6, 7] != null) { textBox6x7.Text = "" + dataSet.sudokuData[6, 7]; }
+            if (dataSet.sudokuData[6, 8] != null) { textBox6x8.Text = "" + dataSet.sudokuData[6, 8]; }
+            if (dataSet.sudokuData[7, 0] != null) { textBox7x0.Text = "" + dataSet.sudokuData[7, 0]; }
+            if (dataSet.sudokuData[7, 1] != null) { textBox7x1.Text = "" + dataSet.sudokuData[7, 1]; }
+            if (dataSet.sudokuData[7, 2] != null) { textBox7x2.Text = "" + dataSet.sudokuData[7, 2]; }
+            if (dataSet.sudokuData[7, 3] != null) { textBox7x3.Text = "" + dataSet.sudokuData[7, 3]; }
+            if (dataSet.sudokuData[7, 4] != null) { textBox7x4.Text = "" + dataSet.sudokuData[7, 4]; }
+            if (dataSet.sudokuData[7, 5] != null) { textBox7x5.Text = "" + dataSet.sudokuData[7, 5]; }
+            if (dataSet.sudokuData[7, 6] != null) { textBox7x6.Text = "" + dataSet.sudokuData[7, 6]; }
+            if (dataSet.sudokuData[7, 7] != null) { textBox7x7.Text = "" + dataSet.sudokuData[7, 7]; }
+            if (dataSet.sudokuData[7, 8] != null) { textBox7x8.Text = "" + dataSet.sudokuData[7, 8]; }
+            if (dataSet.sudokuData[8, 0] != null) { textBox8x0.Text = "" + dataSet.sudokuData[8, 0]; }
+            if (dataSet.sudokuData[8, 1] != null) { textBox8x1.Text = "" + dataSet.sudokuData[8, 1]; }
+            if (dataSet.sudokuData[8, 2] != null) { textBox8x2.Text = "" + dataSet.sudokuData[8, 2]; }
+            if (dataSet.sudokuData[8, 3] != null) { textBox8x3.Text = "" + dataSet.sudokuData[8, 3]; }
+            if (dataSet.sudokuData[8, 4] != null) { textBox8x4.Text = "" + dataSet.sudokuData[8, 4]; }
+            if (dataSet.sudokuData[8, 5] != null) { textBox8x5.Text = "" + dataSet.sudokuData[8, 5]; }
+            if (dataSet.sudokuData[8, 6] != null) { textBox8x6.Text = "" + dataSet.sudokuData[8, 6]; }
+            if (dataSet.sudokuData[8, 7] != null) { textBox8x7.Text = "" + dataSet.sudokuData[8, 7]; }
+            if (dataSet.sudokuData[8, 8] != null) { textBox8x8.Text = "" + dataSet.sudokuData[8, 8]; }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
