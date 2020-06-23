@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.validate_button = new System.Windows.Forms.Button();
             this.textBox0x0 = new System.Windows.Forms.TextBox();
             this.textBox1x0 = new System.Windows.Forms.TextBox();
             this.textBox2x0 = new System.Windows.Forms.TextBox();
@@ -111,17 +111,18 @@
             this.textBox1x6 = new System.Windows.Forms.TextBox();
             this.textBox0x6 = new System.Windows.Forms.TextBox();
             this.test_label = new System.Windows.Forms.Label();
+            this.clear_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // validate_button
             // 
-            this.button1.Location = new System.Drawing.Point(421, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.validate_button.Location = new System.Drawing.Point(305, 13);
+            this.validate_button.Name = "validate_button";
+            this.validate_button.Size = new System.Drawing.Size(134, 23);
+            this.validate_button.TabIndex = 0;
+            this.validate_button.Text = "Validate data";
+            this.validate_button.UseVisualStyleBackColor = true;
+            this.validate_button.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox0x0
             // 
@@ -788,17 +789,28 @@
             // test_label
             // 
             this.test_label.AutoSize = true;
-            this.test_label.Location = new System.Drawing.Point(343, 271);
+            this.test_label.Location = new System.Drawing.Point(493, 263);
             this.test_label.Name = "test_label";
             this.test_label.Size = new System.Drawing.Size(28, 13);
             this.test_label.TabIndex = 82;
             this.test_label.Text = "Test";
+            // 
+            // clear_button
+            // 
+            this.clear_button.Location = new System.Drawing.Point(305, 253);
+            this.clear_button.Name = "clear_button";
+            this.clear_button.Size = new System.Drawing.Size(75, 23);
+            this.clear_button.TabIndex = 83;
+            this.clear_button.Text = "Clear";
+            this.clear_button.UseVisualStyleBackColor = true;
+            this.clear_button.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 293);
+            this.Controls.Add(this.clear_button);
             this.Controls.Add(this.test_label);
             this.Controls.Add(this.textBox8x8);
             this.Controls.Add(this.textBox7x8);
@@ -881,7 +893,7 @@
             this.Controls.Add(this.textBox2x0);
             this.Controls.Add(this.textBox1x0);
             this.Controls.Add(this.textBox0x0);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.validate_button);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -891,7 +903,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button validate_button;
         private System.Windows.Forms.TextBox textBox0x0;
         private System.Windows.Forms.TextBox textBox1x0;
         private System.Windows.Forms.TextBox textBox2x0;
@@ -974,6 +986,7 @@
         private System.Windows.Forms.TextBox textBox1x6;
         private System.Windows.Forms.TextBox textBox0x6;
         private System.Windows.Forms.Label test_label;
+        private System.Windows.Forms.Button clear_button;
     }
 }
 

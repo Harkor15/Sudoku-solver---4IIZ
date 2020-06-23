@@ -28,6 +28,92 @@ namespace Sudoku_solver
             }
         }
 
+        void CleanFields()
+        {
+            textBox0x0.Text = "";
+            textBox0x1.Text = "";
+            textBox0x2.Text = "";
+            textBox0x3.Text = "";
+            textBox0x4.Text = "";
+            textBox0x5.Text = "";
+            textBox0x6.Text = "";
+            textBox0x7.Text = "";
+            textBox0x8.Text = "";
+            textBox1x0.Text = "";
+            textBox1x1.Text = "";
+            textBox1x2.Text = "";
+            textBox1x3.Text = "";
+            textBox1x4.Text = "";
+            textBox1x5.Text = "";
+            textBox1x6.Text = "";
+            textBox1x7.Text = "";
+            textBox1x8.Text = "";
+            textBox2x0.Text = "";
+            textBox2x1.Text = "";
+            textBox2x2.Text = "";
+            textBox2x3.Text = "";
+            textBox2x4.Text = "";
+            textBox2x5.Text = "";
+            textBox2x6.Text = "";
+            textBox2x7.Text = "";
+            textBox2x8.Text = "";
+            textBox3x0.Text = "";
+            textBox3x1.Text = "";
+            textBox3x2.Text = "";
+            textBox3x3.Text = "";
+            textBox3x4.Text = "";
+            textBox3x5.Text = "";
+            textBox3x6.Text = "";
+            textBox3x7.Text = "";
+            textBox3x8.Text = "";
+            textBox4x0.Text = "";
+            textBox4x1.Text = "";
+            textBox4x2.Text = "";
+            textBox4x3.Text = "";
+            textBox4x4.Text = "";
+            textBox4x5.Text = "";
+            textBox4x6.Text = "";
+            textBox4x7.Text = "";
+            textBox4x8.Text = "";
+            textBox5x0.Text = "";
+            textBox5x1.Text = "";
+            textBox5x2.Text = "";
+            textBox5x3.Text = "";
+            textBox5x4.Text = "";
+            textBox5x5.Text = "";
+            textBox5x6.Text = "";
+            textBox5x7.Text = "";
+            textBox5x8.Text = "";
+            textBox6x0.Text = "";
+            textBox6x1.Text = "";
+            textBox6x2.Text = "";
+            textBox6x3.Text = "";
+            textBox6x4.Text = "";
+            textBox6x5.Text = "";
+            textBox6x6.Text = "";
+            textBox6x7.Text = "";
+            textBox6x8.Text = "";
+            textBox7x0.Text = "";
+            textBox7x1.Text = "";
+            textBox7x2.Text = "";
+            textBox7x3.Text = "";
+            textBox7x4.Text = "";
+            textBox7x5.Text = "";
+            textBox7x6.Text = "";
+            textBox7x7.Text = "";
+            textBox7x8.Text = "";
+            textBox8x0.Text = "";
+            textBox8x1.Text = "";
+            textBox8x2.Text = "";
+            textBox8x3.Text = "";
+            textBox8x4.Text = "";
+            textBox8x5.Text = "";
+            textBox8x6.Text = "";
+            textBox8x7.Text = "";
+            textBox8x8.Text = "";
+
+        }
+
         DataSet getDataFromSudoku()
         {
             DataSet dataSet = new DataSet();
@@ -559,6 +645,9 @@ namespace Sudoku_solver
             limitLengthToOne(textBox0x6);
         }
 
-      
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CleanFields();
+        }
     }
 }
