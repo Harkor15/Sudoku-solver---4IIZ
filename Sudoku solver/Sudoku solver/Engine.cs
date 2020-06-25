@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sudoku_solver
 {
-    class Engine
+    public class Engine
     {
         public static DataSet ComputeResult(DataSet dataSet)
         {
