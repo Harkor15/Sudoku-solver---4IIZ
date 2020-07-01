@@ -12,7 +12,6 @@ namespace Sudoku_solver
 {
     public partial class Form1 : Form
     {
-        List<TextBox> fields;
         public Form1()
         {
             InitializeComponent();
@@ -311,13 +310,37 @@ namespace Sudoku_solver
         {
             if (Engine.IsDataValid(getDataFromSudoku()))
             {
-                test_label.Text = "Data is valid";
+                infoLabelSetValidInfo();
             }
             else
             {
-                test_label.Text = "Data is not valid!";
-
+                infoLabelSetNotValidInfo();
             }
+        }
+
+        private void infoLabelClear()
+        {
+            info_label.Text = "";
+        }
+
+        private void infoLabelSetValidInfo()
+        {
+            info_label.Text = "Data is valid";
+            info_label.ForeColor = Color.Green;
+
+        }
+
+        private void infoLabelSetNotValidInfo()
+        {
+            info_label.Text = "Data is not valid!";
+            info_label.ForeColor = Color.Red;
+        }
+
+        private void infoLabelSetSolvedInfo()
+        {
+            info_label.Text = "Sudoku solved!";
+            info_label.ForeColor = Color.Green;
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -648,6 +671,7 @@ namespace Sudoku_solver
         private void button2_Click(object sender, EventArgs e)
         {
             CleanFields();
+            infoLabelClear();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -655,11 +679,12 @@ namespace Sudoku_solver
             DataSet ds = getDataFromSudoku();
             if (Engine.IsDataValid(ds))
             {
+                infoLabelSetSolvedInfo();
                 SetFields(Engine.ComputeResult(ds));
             }
             else
             {
-                //DATA IS NOT VALID!!!
+                infoLabelSetNotValidInfo();
             }
             
         }

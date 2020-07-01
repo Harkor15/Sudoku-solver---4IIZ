@@ -9,7 +9,7 @@ namespace Sudoku_solver
     public class Engine
     {
        
-    public static bool Solve(int[,] fields, int row, int column)
+    private static bool Solve(int[,] fields, int row, int column)
         {
             if (row < 9 && column < 9)
             {

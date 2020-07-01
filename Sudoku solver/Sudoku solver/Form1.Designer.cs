@@ -110,7 +110,7 @@
             this.textBox2x6 = new System.Windows.Forms.TextBox();
             this.textBox1x6 = new System.Windows.Forms.TextBox();
             this.textBox0x6 = new System.Windows.Forms.TextBox();
-            this.test_label = new System.Windows.Forms.Label();
+            this.info_label = new System.Windows.Forms.Label();
             this.clear_button = new System.Windows.Forms.Button();
             this.solve_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -787,14 +787,13 @@
             this.textBox0x6.TabIndex = 55;
             this.textBox0x6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // test_label
+            // info_label
             // 
-            this.test_label.AutoSize = true;
-            this.test_label.Location = new System.Drawing.Point(493, 263);
-            this.test_label.Name = "test_label";
-            this.test_label.Size = new System.Drawing.Size(28, 13);
-            this.test_label.TabIndex = 82;
-            this.test_label.Text = "Test";
+            this.info_label.AutoSize = true;
+            this.info_label.Location = new System.Drawing.Point(302, 107);
+            this.info_label.Name = "info_label";
+            this.info_label.Size = new System.Drawing.Size(0, 13);
+            this.info_label.TabIndex = 82;
             // 
             // clear_button
             // 
@@ -820,10 +819,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 293);
+            this.ClientSize = new System.Drawing.Size(454, 293);
             this.Controls.Add(this.solve_button);
             this.Controls.Add(this.clear_button);
-            this.Controls.Add(this.test_label);
+            this.Controls.Add(this.info_label);
             this.Controls.Add(this.textBox8x8);
             this.Controls.Add(this.textBox7x8);
             this.Controls.Add(this.textBox6x8);
@@ -997,7 +996,7 @@
         private System.Windows.Forms.TextBox textBox2x6;
         private System.Windows.Forms.TextBox textBox1x6;
         private System.Windows.Forms.TextBox textBox0x6;
-        private System.Windows.Forms.Label test_label;
+        private System.Windows.Forms.Label info_label;
         private System.Windows.Forms.Button clear_button;
         private System.Windows.Forms.Button solve_button;
     }
