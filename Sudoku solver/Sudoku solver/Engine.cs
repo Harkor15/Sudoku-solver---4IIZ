@@ -8,8 +8,63 @@ namespace Sudoku_solver
 {
     public class Engine
     {
+       
+    public static bool Solve(int[,] fields, int row, int column)
+        {
+            if (row < 9 && column < 9)
+            {
+                if (fields[row, column] != 0)
+                {
+                    if ((column + 1) < 9) return Solve(fields, row, column + 1);
+                    else if ((row + 1) < 9) return Solve(fields, row + 1, 0);
+                    else return true;
+                }
+                else
+                {
+                    for (int i = 0; i < 9; ++i)
+                    {
+                        if (IsAvailable(fields, row, column, i + 1))
+                        {
+                            fields[row, column] = i + 1;
+
+                            if ((column + 1) < 9)
+                            {
+                                if (Solve(fields, row, column + 1)) return true;
+                                else fields[row, column] = 0;
+                            }
+                            else if ((row + 1) < 9)
+                            {
+                                if (Solve(fields, row + 1, 0)) return true;
+                                else fields[row, column] = 0;
+                            }
+                            else return true;
+                        }
+                    }
+                }
+
+                return false;
+            }
+            else return true;
+        }
+
+        private static bool IsAvailable(int[,] fields, int row, int column, int number)
+        {
+            int rowStart = (row / 3) * 3;
+            int colStart = (column / 3) * 3;
+
+            for (int i = 0; i < 9; ++i)
+            {
+                if (fields[row, i] == number) return false;
+                if (fields[i, column] == number) return false;
+                if (fields[rowStart + (i % 3), colStart + (i / 3)] == number) return false;
+            }
+
+            return true;
+        }
+
         public static DataSet ComputeResult(DataSet dataSet)
         {
+            Solve(dataSet.sudokuData, 0, 0);
             return dataSet;
         }
 

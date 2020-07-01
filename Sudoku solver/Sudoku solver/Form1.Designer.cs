@@ -112,6 +112,7 @@
             this.textBox0x6 = new System.Windows.Forms.TextBox();
             this.test_label = new System.Windows.Forms.Label();
             this.clear_button = new System.Windows.Forms.Button();
+            this.solve_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // validate_button
@@ -805,11 +806,22 @@
             this.clear_button.UseVisualStyleBackColor = true;
             this.clear_button.Click += new System.EventHandler(this.button2_Click);
             // 
+            // solve_button
+            // 
+            this.solve_button.Location = new System.Drawing.Point(305, 63);
+            this.solve_button.Name = "solve_button";
+            this.solve_button.Size = new System.Drawing.Size(134, 23);
+            this.solve_button.TabIndex = 84;
+            this.solve_button.Text = "Solve";
+            this.solve_button.UseVisualStyleBackColor = true;
+            this.solve_button.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 293);
+            this.Controls.Add(this.solve_button);
             this.Controls.Add(this.clear_button);
             this.Controls.Add(this.test_label);
             this.Controls.Add(this.textBox8x8);
@@ -987,6 +999,7 @@
         private System.Windows.Forms.TextBox textBox0x6;
         private System.Windows.Forms.Label test_label;
         private System.Windows.Forms.Button clear_button;
+        private System.Windows.Forms.Button solve_button;
     }
 }
 

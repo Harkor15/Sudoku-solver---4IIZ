@@ -201,19 +201,19 @@ namespace Sudoku_solver
             return dataSet;
         }
 
-        int? getFieldValue(TextBox tb)
+        int getFieldValue(TextBox tb)
         {
             string text = tb.Text;
             if (text.Length > 1|| text.Length==0)
             {
-                return null;
+                return 0;
             }
             else
             {
                 int result;
                 if (!Int32.TryParse(text,out result))
                 {
-                    return null;
+                    return 0;
                 }
                 else
                 {
@@ -648,6 +648,20 @@ namespace Sudoku_solver
         private void button2_Click(object sender, EventArgs e)
         {
             CleanFields();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DataSet ds = getDataFromSudoku();
+            if (Engine.IsDataValid(ds))
+            {
+                SetFields(Engine.ComputeResult(ds));
+            }
+            else
+            {
+                //DATA IS NOT VALID!!!
+            }
+            
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Sudoku_solver
 {
     public class DataSet
     {
-        public int?[,] sudokuData = new int?[9,9];
+        public int[,] sudokuData = new int[9,9];
         public bool result;
     }
 }
