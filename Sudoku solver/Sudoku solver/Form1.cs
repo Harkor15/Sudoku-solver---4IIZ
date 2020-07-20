@@ -688,5 +688,340 @@ namespace Sudoku_solver
             }
             
         }
+
+        private void textBox3x0_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox3x0);
+        }
+
+        private void textBox4x0_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox4x0);
+        }
+
+        private void textBox5x0_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox5x0);
+        }
+
+        private void textBox3x1_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox3x1);
+        }
+
+        private void textBox6x0_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox6x0);
+        }
+
+        private void textBox7x0_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox7x0);
+        }
+
+        private void textBox8x0_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox8x0);
+        }
+
+        private void textBox6x1_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox6x1);
+        }
+
+        private void textBox7x1_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox7x1);
+        }
+
+        private void textBox8x1_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox8x1);
+        }
+
+        private void textBox6x2_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox6x2);
+        }
+
+        private void textBox7x2_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox7x2);
+        }
+
+        private void textBox8x2_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox8x2);
+        }
+
+        private void textBox0x3_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox0x3);
+        }
+
+        private void textBox1x3_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox1x3);
+        }
+
+        private void textBox2x3_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox2x3);
+        }
+
+        private void textBox0x4_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox0x4);
+        }
+
+        private void textBox1x4_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox1x4);
+        }
+
+        private void textBox2x4_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox2x4);
+        }
+
+        private void textBox0x5_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox0x5);
+        }
+
+        private void textBox1x5_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox1x5);
+        }
+
+        private void textBox2x5_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox2x5);
+        }
+
+        private void textBox3x3_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox3x3);
+        }
+
+        private void textBox4x3_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox4x3);
+        }
+
+        private void textBox5x3_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox5x3);
+        }
+
+        private void textBox3x4_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox3x4);
+        }
+
+        private void textBox4x4_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox4x4);
+        }
+
+        private void textBox5x4_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox5x4);
+        }
+
+        private void textBox3x5_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox3x5);
+        }
+
+        private void textBox4x5_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox4x5);
+        }
+
+        private void textBox5x5_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox5x5);
+        }
+
+        private void textBox6x3_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox6x3);
+        }
+
+        private void textBox7x3_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox7x3);
+        }
+
+        private void textBox8x3_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox8x3);
+        }
+
+        private void textBox6x4_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox6x4);
+        }
+
+        private void textBox7x4_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox7x4);
+        }
+
+        private void textBox8x4_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox8x4);
+        }
+
+        private void textBox6x5_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox6x5);
+        }
+
+        private void textBox7x5_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox7x5);
+        }
+
+        private void textBox8x5_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox8x5);
+        }
+
+        private void textBox0x6_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox0x6);
+        }
+
+        private void textBox1x6_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox1x6);
+        }
+
+        private void textBox2x6_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox2x6);
+        }
+
+        private void textBox0x7_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox0x7);
+        }
+
+        private void textBox1x7_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox1x7);
+        }
+
+        private void textBox2x7_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox2x7);
+        }
+
+        private void textBox0x8_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox0x8);
+        }
+
+        private void textBox1x8_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox1x8);
+        }
+
+        private void textBox2x8_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox2x8);
+        }
+
+        private void textBox3x6_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox3x6);
+        }
+
+        private void textBox4x6_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox4x6);
+        }
+
+        private void textBox5x6_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox5x6);
+        }
+
+        private void textBox3x7_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox3x7);
+        }
+
+        private void textBox4x7_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox4x7);
+        }
+
+        private void textBox5x7_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox5x7);
+        }
+
+        private void textBox3x8_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox3x8);
+        }
+
+        private void textBox4x8_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox4x8);
+        }
+
+        private void textBox5x8_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox5x8);
+        }
+
+        private void textBox6x6_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox6x6);
+        }
+
+        private void textBox7x6_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox7x6);
+        }
+
+        private void textBox8x6_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox8x6);
+        }
+
+        private void textBox6x7_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox6x7);
+        }
+
+        private void textBox7x7_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox7x7);
+        }
+
+        private void textBox8x7_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox8x7);
+        }
+
+        private void textBox6x8_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox6x8);
+        }
+
+        private void textBox7x8_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox7x8);
+        }
+
+        private void textBox8x8_TextChanged(object sender, EventArgs e)
+        {
+            limitLengthToOne(textBox8x8);
+        }
     }
 }
