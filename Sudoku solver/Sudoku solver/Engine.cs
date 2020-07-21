@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace Sudoku_solver
 {
+    /// <summary>
+    /// Klasa odpowiadająca za implementacje logiki biznesowej projektu.
+    /// </summary>
     public class Engine
     {
-       
+       /// <summary>
+       /// Metoda rozwiązująca łamigłówkę sudoku.
+       /// </summary>
+       /// <param name="fields">Zbiór pól wpisanych w łamigłówkę</param>
+       /// <param name="row"></param>
+       /// <param name="column"></param>
+       /// <returns></returns>
     private static bool Solve(int[,] fields, int row, int column)
         {
             if (row < 9 && column < 9)
@@ -46,7 +55,14 @@ namespace Sudoku_solver
             }
             else return true;
         }
-
+        /// <summary>
+        /// Metoda sprawdzająca możliwość wstawienia cyfry w dane pole.
+        /// </summary>
+        /// <param name="fields">Zbiór danych zapisanych w poszczególnych polach.</param>
+        /// <param name="row">Aktualny rząd</param>
+        /// <param name="column">Aktualna kolumna</param>
+        /// <param name="number">Aktualna cyfra</param>
+        /// <returns></returns>
         private static bool IsAvailable(int[,] fields, int row, int column, int number)
         {
             int rowStart = (row / 3) * 3;
@@ -61,13 +77,21 @@ namespace Sudoku_solver
 
             return true;
         }
-
+        /// <summary>
+        /// Metoda 
+        /// </summary>
+        /// <param name="dataSet">Wejściowy zbiór danych dla którego szukany jest rezultat.</param>
+        /// <returns></returns>
         public static DataSet ComputeResult(DataSet dataSet)
         {
             Solve(dataSet.sudokuData, 0, 0);
             return dataSet;
         }
-
+        /// <summary>
+        /// Metoda sprawdzająca poprawność danych wpisanych w pola, wyszukująca niepoprawnie powtarzające się cyfry w rzędach, kolumanch lub kwadratach.
+        /// </summary>
+        /// <param name="dataSet">Zbiór danych na którym przeprowadzane jest sprawdzenie poprawności.</param>
+        /// <returns></returns>
         public static bool IsDataValid(DataSet dataSet)
         {
             int tmp = 0;

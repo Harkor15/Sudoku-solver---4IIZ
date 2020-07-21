@@ -10,14 +10,23 @@ using System.Windows.Forms;
 
 namespace Sudoku_solver
 {
+    /// <summary>
+    /// Klasa okna głównego.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Metoda wykonywana podczas inicjalizacji okna głównego.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
             
         }
-
+        /// <summary>
+        /// Metoda ogarniczająca wpisaywanie większej ilości znaków do pól edycyjnych w sudoku.
+        /// </summary>
+        /// <param name="tb">Pole edycyjne dla którego następuje usunięcie niepotrzebnych znaków.</param>
         void limitLengthToOne(TextBox tb)
         {
             String value = tb.Text;
@@ -26,7 +35,9 @@ namespace Sudoku_solver
                 tb.Text = value.Substring(0, 1);
             }
         }
-
+        /// <summary>
+        /// Metoda czyszcząca wszystkie pola wprowadzania danych.
+        /// </summary>
         void CleanFields()
         {
             textBox0x0.Text = "";
@@ -112,7 +123,10 @@ namespace Sudoku_solver
             textBox8x8.Text = "";
 
         }
-
+        /// <summary>
+        /// Metoda zwracająca wszystkie dane wpisane w pola edycyjne w postaci jednego obiektu klasy DataSet.
+        /// </summary>
+        /// <returns></returns>
         DataSet getDataFromSudoku()
         {
             DataSet dataSet = new DataSet();
@@ -199,7 +213,11 @@ namespace Sudoku_solver
             dataSet.sudokuData[8, 8] = getFieldValue(textBox8x8);
             return dataSet;
         }
-
+        /// <summary>
+        /// Metoda wyciągająca wpisaną cyfre w pojedynczego pola edycyjnego.
+        /// </summary>
+        /// <param name="tb">Pole edycyjne  zktórego wyciągane są dane.</param>
+        /// <returns></returns>
         int getFieldValue(TextBox tb)
         {
             string text = tb.Text;
@@ -220,7 +238,10 @@ namespace Sudoku_solver
                 }
             }
         }
-        
+        /// <summary>
+        /// Metoda wyświetlająca dane w polach edycyjnych.
+        /// </summary>
+        /// <param name="dataSet">Zbiór danych który jest wyświetlany przez metodę.</param>
         void SetFields(DataSet dataSet)
         {
             if (dataSet.sudokuData[0, 0] != null) { textBox0x0.Text = "" + dataSet.sudokuData[0, 0]; }
@@ -305,7 +326,11 @@ namespace Sudoku_solver
             if (dataSet.sudokuData[8, 7] != null) { textBox8x7.Text = "" + dataSet.sudokuData[8, 7]; }
             if (dataSet.sudokuData[8, 8] != null) { textBox8x8.Text = "" + dataSet.sudokuData[8, 8]; }
         }
-
+        /// <summary>
+        /// Metoda odpowiadająca za reakcje na kliknięcie w przycisk walidacji danych
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             if (Engine.IsDataValid(getDataFromSudoku()))
@@ -317,25 +342,33 @@ namespace Sudoku_solver
                 infoLabelSetNotValidInfo();
             }
         }
-
+        /// <summary>
+        /// Metoda czyszcząca wyświetlany komunikat.
+        /// </summary>
         private void infoLabelClear()
         {
             info_label.Text = "";
         }
-
+        /// <summary>
+        /// Metoda wyświetlająca informacje o poprawności wprowadzonych danych.
+        /// </summary>
         private void infoLabelSetValidInfo()
         {
             info_label.Text = "Data is valid";
             info_label.ForeColor = Color.Green;
 
         }
-
+        /// <summary>
+        /// Metoda wyświetlająca informacje o niepoprawności wprowadzonych danych.
+        /// </summary>
         private void infoLabelSetNotValidInfo()
         {
             info_label.Text = "Data is not valid!";
             info_label.ForeColor = Color.Red;
         }
-
+        /// <summary>
+        /// Metoda wyświetlająca informacje o poprawnym rozwiązaniu łamigłówki.
+        /// </summary>
         private void infoLabelSetSolvedInfo()
         {
             info_label.Text = "Sudoku solved!";
@@ -667,13 +700,21 @@ namespace Sudoku_solver
         {
             limitLengthToOne(textBox0x6);
         }
-
+        /// <summary>
+        /// Metoda odpowiadająca za reakcje na kliknięcie przycisku czyszczenia tablicy.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             CleanFields();
             infoLabelClear();
         }
-
+        /// <summary>
+        /// Metoda odpowiedzialna za reakcję na kliknięcie przycisku rozwiązującego sudoku.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click_1(object sender, EventArgs e)
         {
             DataSet ds = getDataFromSudoku();

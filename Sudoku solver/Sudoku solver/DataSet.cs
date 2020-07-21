@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sudoku_solver
 {
+    /// <summary>
+    /// Klasa danych służąca do zbierania informacji o planszy sudoku.
+    /// </summary>
     public class DataSet
     {
         public int[,] sudokuData = new int[9,9];
