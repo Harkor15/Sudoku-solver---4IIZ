@@ -4,9 +4,15 @@ using Sudoku_solver;
 
 namespace SudokuSolver.UnitTests
 {
+    /// <summary>
+    /// Klasa zawierająca testy klasy Engine
+    /// </summary>
     [TestClass]
     public class EngineTests
     {
+        /// <summary>
+        /// Test poprawności działania matody sprawdzającej poprawność danych dla poprawnych danych
+        /// </summary>
         [TestMethod]
         public void ValidTest()
         {
@@ -27,6 +33,9 @@ namespace SudokuSolver.UnitTests
             Assert.IsTrue(result);
         }
 
+        /// <summary>
+        /// Test poprawności działania matody sprawdzającej poprawność danych dla błędnych danych
+        /// </summary>
         [TestMethod]
         public void ValidTest2()
         {
@@ -47,6 +56,9 @@ namespace SudokuSolver.UnitTests
             Assert.IsFalse(result);
         }
 
+        /// <summary>
+        /// Test poprawności działania matody sprawdzającej poprawność danych dla błędnych danych
+        /// </summary>
         [TestMethod]
         public void ValidTest3()
         {
