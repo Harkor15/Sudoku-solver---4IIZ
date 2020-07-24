@@ -17,7 +17,7 @@ namespace Sudoku_solver
        /// <param name="fields">Zbiór pól wpisanych w łamigłówkę</param>
        /// <param name="row"></param>
        /// <param name="column"></param>
-       /// <returns></returns>
+       /// <returns>Poprawność aktualnego w trakcie obliczeń stanu</returns>
     private static bool Solve(int[,] fields, int row, int column)
         {
             if (row < 9 && column < 9)
@@ -62,7 +62,7 @@ namespace Sudoku_solver
         /// <param name="row">Aktualny rząd</param>
         /// <param name="column">Aktualna kolumna</param>
         /// <param name="number">Aktualna cyfra</param>
-        /// <returns></returns>
+        /// <returns>Możliwość wstawiania danej cyfry w dane pole</returns>
         private static bool IsAvailable(int[,] fields, int row, int column, int number)
         {
             int rowStart = (row / 3) * 3;
@@ -81,7 +81,7 @@ namespace Sudoku_solver
         /// Metoda 
         /// </summary>
         /// <param name="dataSet">Wejściowy zbiór danych dla którego szukany jest rezultat.</param>
-        /// <returns></returns>
+        /// <returns>Dane zawierające wynik rozwiązywania</returns>
         public static DataSet ComputeResult(DataSet dataSet)
         {
             Solve(dataSet.sudokuData, 0, 0);
@@ -91,7 +91,7 @@ namespace Sudoku_solver
         /// Metoda sprawdzająca poprawność danych wpisanych w pola, wyszukująca niepoprawnie powtarzające się cyfry w rzędach, kolumanch lub kwadratach.
         /// </summary>
         /// <param name="dataSet">Zbiór danych na którym przeprowadzane jest sprawdzenie poprawności.</param>
-        /// <returns></returns>
+        /// <returns>Informacja o poprawności danego zbioru</returns>
         public static bool IsDataValid(DataSet dataSet)
         {
             int tmp = 0;
